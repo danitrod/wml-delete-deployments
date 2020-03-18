@@ -6,15 +6,19 @@ If you use the Watson Machine Learning Lite plan, and can't create any more Wats
 
 Therefore, I created this script to delete all your deployments for you.
 
+## Requirements
+
+-   Having [Python 3 installed](https://www.python.org/downloads/)
+-   Having [IBM Cloud CLI installed](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
+
 ## Instructions
 
-1. Install [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started)
-2. Install IBM Cloud ML plugin
+1. Install IBM Cloud ML plugin
    `ibmcloud plugin install machine-learning`
-3. Find your WML instance `ibmcloud ml list instances`
-4. Set the WML instance you wish to delete deployments `ibmcloud ml set instance <instance-id>`
-5. Clone and acces the repo `git clone https://github.com/danitrod/wml-delete-deployments.git && cd wml-delete-deployments`
-6. Run the script `sh deleteDeployments.sh`
+2. Find your WML instance `ibmcloud ml list instances`
+3. Set the WML instance you wish to delete deployments `ibmcloud ml set instance <instance-id>`
+4. Clone and acces the repo `git clone https://github.com/danitrod/wml-delete-deployments.git && cd wml-delete-deployments`
+5. Run the script `sh deleteDeployments.sh`
 
 ## License
 
